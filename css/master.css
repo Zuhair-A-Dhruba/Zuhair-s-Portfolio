@@ -29,8 +29,8 @@ nav a {
 }
 
 section {
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 750px;
     margin: 20px auto;
     padding: 20px;
     background: white;
@@ -44,6 +44,7 @@ section {
 #about {
     transform: scale(1);
     transition: transform 0.5s ease-in-out; 
+    max-width: 1900px;
 }
 
 #about:hover {
@@ -176,4 +177,7 @@ ul > li {
 .project ul {
     list-style-type: disc;
     padding-left: 20px;
+}
+.container{
+    display: flex;
 }
