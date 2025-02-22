@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.cdnfonts.com/css/technology" rel="stylesheet" />
+<style>
+    button{
+        font-family: technology;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Calculator</h1>
+        <a href="index.html">Back to Portfolio</a>
+    </header>
+
+    <section class="calculator-container">
+        <div class="calculator">
+            <input type="text" id="display" disabled style="font-family: technology;">
+
+            <div class="row">
+                <button class="calc-btn" onclick="addToInput('7')">7</button>
+                <button class="calc-btn" onclick="addToInput('8')">8</button>
+                <button class="calc-btn" onclick="addToInput('9')">9</button>
+                <button class="calc-btn" onclick="addToInput('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="calc-btn" onclick="addToInput('4')">4</button>
+                <button class="calc-btn" onclick="addToInput('5')">5</button>
+                <button class="calc-btn" onclick="addToInput('6')">6</button>
+                <button class="calc-btn" onclick="addToInput('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="calc-btn" onclick="addToInput('1')">1</button>
+                <button class="calc-btn" onclick="addToInput('2')">2</button>
+                <button class="calc-btn" onclick="addToInput('3')">3</button>
+                <button class="calc-btn" onclick="addToInput('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="calc-btn" onclick="addToInput('0')">0</button>
+                <button class="calc-btn" onclick="clearDisplay()">C</button>
+                <button class="calc-btn" onclick="calculate()">=</button>
+                <button class="calc-btn" onclick="addToInput('/')">/</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>
